@@ -1,9 +1,9 @@
+import 'package:flutter_test/flutter_test.dart';
+
 import 'package:shopping_cart/app/cubit/app_cubit.dart';
 import 'package:shopping_cart/app/cubit/app_state.dart';
 import 'package:shopping_cart/enum/app_languages.dart';
 import 'package:shopping_cart/enum/app_theme.dart';
-import 'package:flutter_test/flutter_test.dart';
-
 import '../mock/mock_storage.dart';
 
 void main() {
@@ -15,8 +15,10 @@ void main() {
     });
 
     test('Default app state should be returned', () {
-      expect(appCubit.fromJson({'theme': '', 'language': ''}),
-          const AppState(appTheme: AppTheme.dark, appLanguage: AppLanguage.en));
+      expect(
+        appCubit.fromJson(<String, String>{'theme': '', 'language': ''}),
+        const AppState(appTheme: AppTheme.dark, appLanguage: AppLanguage.en),
+      );
     });
   });
 

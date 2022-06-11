@@ -9,39 +9,43 @@ environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
+  badges: ^2.0.3
+  bloc: ^8.0.3
+  cached_network_image: ^3.2.1
+  equatable: ^2.0.3
+  faker: ^2.0.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.0.1
+  flutter_dotenv: ^5.0.2
   flutter_localizations:
     sdk: flutter
-
-  bloc: ^8.0.3
-  flutter_bloc: ^8.0.1
-  hydrated_bloc: ^8.1.0
-  equatable: ^2.0.3
-
-  path_provider: ^2.0.10
-
-  # Environment
-  flutter_dotenv: ^5.0.2
   flutter_svg: ^1.0.3
-
-  logger: ^1.1.0
-
-  # Router
+  freezed_annotation: ^2.0.3
   go_router: ^3.1.0
+  hydrated_bloc: ^8.1.0
+  json_annotation: ^4.5.0
+  logger: ^1.1.0
+  path_provider: ^2.0.10
+  shimmer: ^2.0.0
+  very_good_analysis: ^3.0.0
 
 dev_dependencies:
+  build_runner: ^2.1.11
   flutter_test:
     sdk: flutter
-  test: ^1.21.1
-  mocktail: ^0.3.0
+  freezed: ^2.0.3+1
+  import_sorter: ^4.6.0
   integration_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
-  very_good_analysis: ^3.0.0
+  json_serializable: ^6.2.0
+  mocktail: ^0.3.0
+  test: ^1.21.1
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
 
 flutter_intl:
   enabled: true

@@ -2,5 +2,10 @@
   "@@locale": "en",
   "hello": "Hello",
   "landing": "Landing",
-  "settings": "Settings"
+  "settings": "Settings",
+  "products": "Products",
+  "cart": "Cart",
+  "buy": "Buy",
+  "paymentSucces": "Payment Succesful",
+  "addSomethingToCart": "Add Something to cart!!!"
 }

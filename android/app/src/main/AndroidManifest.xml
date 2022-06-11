@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.package.shopping_cart">
+    package="com.example.shopping_cart">
    <application
-        android:label="Bumbii Books"
+        android:label="Shopping Cart"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
-            android:name="com.package.shopping_cart.MainActivity"
+            android:name="com.example.shopping_cart.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"

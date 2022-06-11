@@ -1,13 +1,14 @@
-import 'package:shopping_cart/env/env.dart';
 import 'package:logger/logger.dart';
 
+import 'package:shopping_cart/env/env.dart';
+
 class AppLogger {
-  static final AppLogger _instance = AppLogger._();
   AppLogger._() {
     Logger.level = loggerLevel;
 
     _logger = Logger(printer: PrettyPrinter());
   }
+  static final AppLogger _instance = AppLogger._();
   static AppLogger get instance => _instance;
 
   static late Logger _logger;

@@ -1,31 +1,38 @@
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+
 import 'package:shopping_cart/app/cubit/app_state.dart';
 import 'package:shopping_cart/enum/app_languages.dart';
 import 'package:shopping_cart/enum/app_theme.dart';
-import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 class AppCubit extends HydratedCubit<AppState> {
   AppCubit()
-      : super(const AppState(
-            appTheme: AppTheme.dark, appLanguage: AppLanguage.en));
+      : super(
+          const AppState(
+            appTheme: AppTheme.dark,
+            appLanguage: AppLanguage.en,
+          ),
+        );
 
   @override
   AppState? fromJson(Map<String, dynamic> json) {
-    final String themeName = json['theme'];
-    final String languageName = json['language'];
+    final themeName = json['theme'] as String;
+    final languageName = json['language'] as String;
 
-    AppTheme theme = AppTheme.values.firstWhere(
-        (theme) => theme.name == themeName,
-        orElse: () => AppTheme.dark);
+    final theme = AppTheme.values.firstWhere(
+      (theme) => theme.name == themeName,
+      orElse: () => AppTheme.dark,
+    );
 
-    AppLanguage language = AppLanguage.values.firstWhere(
-        (language) => language.name == languageName,
-        orElse: () => AppLanguage.en);
+    final language = AppLanguage.values.firstWhere(
+      (language) => language.name == languageName,
+      orElse: () => AppLanguage.en,
+    );
     return AppState(appTheme: theme, appLanguage: language);
   }
 
   @override
   Map<String, dynamic>? toJson(AppState state) {
-    final Map<String, dynamic> theme = {
+    final theme = <String, dynamic>{
       'theme': state.appTheme.toString(),
       'language': state.appLanguage.toString()
     };

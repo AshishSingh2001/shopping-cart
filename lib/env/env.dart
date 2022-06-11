@@ -1,5 +1,6 @@
-import 'package:shopping_cart/enum/env.dart';
 import 'package:logger/logger.dart';
+
+import 'package:shopping_cart/enum/env.dart';
 
 const Env activeEnv = Env.dev;
 
@@ -23,6 +24,7 @@ String getConfigEnvFile({Env activeEnv = activeEnv}) {
       return EnvFilePath.staging;
     case Env.prod:
       return EnvFilePath.prod;
+    // ignore: no_default_cases
     default:
       return EnvFilePath.dev;
   }

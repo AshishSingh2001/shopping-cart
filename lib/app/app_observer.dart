@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+
 import 'package:shopping_cart/utils/logger.dart';
 
 class AppBlocObserver extends BlocObserver {

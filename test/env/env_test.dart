@@ -1,6 +1,7 @@
+import 'package:test/test.dart';
+
 import 'package:shopping_cart/enum/env.dart';
 import 'package:shopping_cart/env/env.dart';
-import 'package:test/test.dart';
 
 void main() {
   group('Test env', () {
@@ -9,6 +10,7 @@ void main() {
     });
 
     test('Get dev env', () {
+      // ignore: avoid_redundant_argument_values
       expect(getConfigEnvFile(activeEnv: Env.dev), EnvFilePath.dev);
     });
 

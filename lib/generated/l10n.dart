@@ -1,6 +1,9 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
+
 import 'package:flutter/material.dart';
+
 import 'package:intl/intl.dart';
+
 import 'intl/messages_all.dart';
 
 // **************************************************************************
@@ -75,6 +78,56 @@ class S {
     return Intl.message(
       'Settings',
       name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Products`
+  String get products {
+    return Intl.message(
+      'Products',
+      name: 'products',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cart`
+  String get cart {
+    return Intl.message(
+      'Cart',
+      name: 'cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy`
+  String get buy {
+    return Intl.message(
+      'Buy',
+      name: 'buy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Succesful`
+  String get paymentSucces {
+    return Intl.message(
+      'Payment Succesful',
+      name: 'paymentSucces',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Something to cart!!!`
+  String get addSomethingToCart {
+    return Intl.message(
+      'Add Something to cart!!!',
+      name: 'addSomethingToCart',
       desc: '',
       args: [],
     );
