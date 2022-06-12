@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import 'package:shopping_cart/domain/items/item.dart';
 import 'package:shopping_cart/domain/items/item_repository.dart';
 import 'package:shopping_cart/infrastucture/items/fake_items.dart';
@@ -36,14 +38,15 @@ class FakeItemsRepository extends ItemsRepository {
     }
 
     final toggledItem = item.copyWith(isInCart: !item.isInCart);
-    _updateCurrentItemsWith(toggledItem);
+    updateCurrentItemsWith(toggledItem);
 
     addToStream(_currentItems);
 
     return toggledItem;
   }
 
-  void _updateCurrentItemsWith(Item item) {
+  @visibleForTesting
+  void updateCurrentItemsWith(Item item) {
     final index = _currentItems.indexWhere((it) => it.id == item.id);
     if (index != -1) {
       _currentItems[index] = item;
