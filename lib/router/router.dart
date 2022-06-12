@@ -39,6 +39,29 @@ final GoRouter router = GoRouter(
   debugLogDiagnostics: !prodEnv,
 );
 
+GoRouter testRouter([String? initialLocation]) => GoRouter(
+      initialLocation: initialLocation ?? '/',
+      routes: [
+        GoRoute(
+          name: RouteName.home,
+          path: '/',
+          redirect: (_) => '/products',
+        ),
+        GoRoute(
+          name: RouteName.products,
+          path: '/products',
+          builder: (_, __) => const ProductsPage(),
+          routes: [
+            GoRoute(
+              name: RouteName.cart,
+              path: 'cart',
+              builder: (_, __) => const CartPage(),
+            ),
+          ],
+        ),
+      ],
+    );
+
 void goTo({required String path}) {
   router.go(path);
 }

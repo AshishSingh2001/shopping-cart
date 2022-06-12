@@ -4,7 +4,7 @@ import 'package:shopping_cart/app/cubit/app_state.dart';
 import 'package:shopping_cart/enum/app_languages.dart';
 import 'package:shopping_cart/enum/app_theme.dart';
 
-class AppCubit extends HydratedCubit<AppState> {
+class AppCubit extends Cubit<AppState> {
   AppCubit()
       : super(
           const AppState(

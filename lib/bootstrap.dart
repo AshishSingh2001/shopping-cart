@@ -26,7 +26,7 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   final storage = await HydratedStorage.build(
     storageDirectory: kIsWeb
         ? HydratedStorage.webStorageDirectory
-        : Directory('${appDocDirectory.path}/bumbii'),
+        : Directory('${appDocDirectory.path}/shopping_cart'),
   );
   await runZonedGuarded(
     () async {

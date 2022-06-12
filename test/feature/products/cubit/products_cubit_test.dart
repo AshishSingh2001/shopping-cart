@@ -4,9 +4,7 @@ import 'package:mocktail/mocktail.dart';
 
 import 'package:shopping_cart/domain/items/item.dart';
 import 'package:shopping_cart/feature/products/cubit/products_cubit.dart';
-import 'package:shopping_cart/infrastucture/items/items_repository.dart';
-
-class MockItemsRepository extends Mock implements FakeItemsRepository {}
+import '../../../helper.dart';
 
 void main() {
   late MockItemsRepository mockItemsRepository;

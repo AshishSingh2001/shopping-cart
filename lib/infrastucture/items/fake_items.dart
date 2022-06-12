@@ -1,3 +1,102 @@
 import 'package:shopping_cart/domain/items/item.dart';
 
-final fakeItems = List.generate(2, (_) => Item.fake());
+// final fakeItems = List.generate(6, (_) => Item.fake());
+
+final fakeItems = <Item>[
+  const Item(
+    id: 2648,
+    name: 'Biryani',
+    description: 'Est velit egestas dui id ornare arcu.',
+    isInCart: false,
+    price: 600,
+    imageUrl: 'https://picsum.photos/id/112/100',
+  ),
+  const Item(
+    id: 1837,
+    name: 'Tandoori chicken',
+    description: 'Imperdiet sed euismod nisi porta lorem mollis aliquam ut.',
+    isInCart: true,
+    price: 500,
+    imageUrl: 'https://picsum.photos/id/135/100',
+  ),
+  const Item(
+    id: 9904,
+    name: 'Galbi',
+    description: 'Sit amet porttitor eget dolor morbi non arcu risus quis.',
+    isInCart: false,
+    price: 700,
+    imageUrl: 'https://picsum.photos/id/347/100',
+  ),
+  const Item(
+    id: 8651,
+    name: 'Cream pie',
+    description: 'In metus vulputate eu scelerisque felis.',
+    isInCart: true,
+    price: 300,
+    imageUrl: 'https://picsum.photos/id/44/100',
+  ),
+  const Item(
+    id: 6081,
+    name: 'Lemang',
+    description: 'Consectetur adipiscing elit ut aliquam.',
+    isInCart: true,
+    price: 400,
+    imageUrl: 'https://picsum.photos/id/464/100',
+  ),
+  const Item(
+    id: 286,
+    name: 'Green papaya salad',
+    description: 'Amet est placerat in egestas erat imperdiet.',
+    isInCart: false,
+    price: 600,
+    imageUrl: 'https://picsum.photos/id/140/100',
+  ),
+  const Item(
+    id: 465,
+    name: 'Steak pie',
+    description: 'Fames ac turpis egestas maecenas pharetra.',
+    isInCart: true,
+    price: 800,
+    imageUrl: 'https://picsum.photos/id/129/100',
+  ),
+  const Item(
+    id: 7361,
+    name: 'Vindaloo',
+    description: 'Porttitor lacus luctus accumsan tortor.',
+    isInCart: false,
+    price: 400,
+    imageUrl: 'https://picsum.photos/id/123/100',
+  ),
+  const Item(
+    id: 964,
+    name: 'Corned beef pie',
+    description: 'Magna eget est lorem ipsum dolor sit amet consectetur',
+    isInCart: false,
+    price: 300,
+    imageUrl: 'https://picsum.photos/id/214/100',
+  ),
+  const Item(
+    id: 3574,
+    name: 'Gordita',
+    description: 'Ipsum nunc aliquet bibendum enim facilisis gravida.',
+    isInCart: false,
+    price: 600,
+    imageUrl: 'https://picsum.photos/id/354/100',
+  ),
+  const Item(
+    id: 6654,
+    name: 'Corned beef pie',
+    description: 'Sed ullamcorper morbi tincidunt ornare massa.',
+    isInCart: false,
+    price: 700,
+    imageUrl: 'https://picsum.photos/id/412/100',
+  ),
+  const Item(
+    id: 1338,
+    name: 'Green curry',
+    description: 'Sit amet purus gravida quis blandit turpis cursus in.',
+    isInCart: false,
+    price: 900,
+    imageUrl: 'https://picsum.photos/id/253/100',
+  ),
+];
