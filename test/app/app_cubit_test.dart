@@ -29,10 +29,6 @@ void main() {
       appCubit = await mockHydratedStorage(AppCubit.new);
     });
 
-    // test('Default app theme is ${AppTheme.kids}', () {
-    //   expect(appCubit.state.appTheme, AppTheme.kids);
-    // });
-
     test('Change theme to ${AppTheme.dark}', () {
       appCubit.changeTheme(theme: AppTheme.dark);
       expect(appCubit.state.appTheme, AppTheme.dark);

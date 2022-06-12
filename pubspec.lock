@@ -492,7 +492,7 @@ packages:
     source: hosted
     version: "1.0.2"
   mockingjay:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: mockingjay
       url: "https://pub.dartlang.org"

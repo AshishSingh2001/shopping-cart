@@ -7,10 +7,12 @@ class CartPageRobot {
   CartPageRobot(this.tester);
   WidgetTester tester;
 
+  /// verify if the page contain cartpage
   void verifyCartPage() {
     expect(find.byType(CartPage), findsOneWidget);
   }
 
+  /// get number of cartlisttile rendered
   int _getCartListTilesCount() {
     final finder =
         find.byType(CartListTile, skipOffstage: false); // Without quotes!
@@ -18,6 +20,7 @@ class CartPageRobot {
     return count;
   }
 
+  /// remove a cart item anc check if the cart items decrease
   Future<void> verifyRemoveCartItem() async {
     final prevCount = _getCartListTilesCount();
     final removeButton = find.byIcon(Icons.remove_circle_outline);

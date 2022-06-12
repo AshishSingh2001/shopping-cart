@@ -27,6 +27,8 @@ class ProductsPageRobot {
     return int.parse(text.data!);
   }
 
+  /// Verify the cart value increases when 
+  /// a item is added to cart
   Future<void> verifyToggleAddToCart() async {
     final addToCart = find.byIcon(Icons.add);
     expect(addToCart, findsWidgets);
@@ -37,6 +39,7 @@ class ProductsPageRobot {
     expect(prev + 1, curr);
   }
 
+  /// navigate to the cart page
   Future<void> verifyTapCartButton() async {
     final cartButton = find.byIcon(Icons.shopping_cart);
     expect(cartButton, findsOneWidget);

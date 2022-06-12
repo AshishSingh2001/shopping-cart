@@ -26,7 +26,6 @@ dependencies:
   hydrated_bloc: ^8.1.0
   json_annotation: ^4.5.0
   logger: ^1.1.0
-  mockingjay: ^0.3.0
   path_provider: ^2.0.10
   shimmer: ^2.0.0
   very_good_analysis: ^3.0.0
@@ -41,6 +40,7 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   json_serializable: ^6.2.0
+  mockingjay: ^0.3.0
   mocktail: ^0.3.0
   test: ^1.21.1
 
