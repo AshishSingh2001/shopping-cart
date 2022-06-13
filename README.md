@@ -1,7 +1,8 @@
 # Shopping Cart
 - Bloc
 - unit, widget and integration tests
-- Localisations
+- Internationalisation
+- Reactive Repositories
 - Navigator 2.0
 
 # Prerequisite

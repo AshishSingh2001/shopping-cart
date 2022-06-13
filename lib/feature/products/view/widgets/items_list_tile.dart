@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:shopping_cart/domain/items/item.dart';
+import 'package:shopping_cart/domain/items/model/item.dart';
 import 'package:shopping_cart/feature/products/cubit/products_cubit.dart';
 
 class ItemListTile extends StatelessWidget {

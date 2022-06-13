@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 
-import 'package:shopping_cart/utils/logger.dart';
+import 'package:shopping_cart/logger.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override

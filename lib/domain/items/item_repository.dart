@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:shopping_cart/domain/items/item.dart';
+import 'package:shopping_cart/domain/items/model/item.dart';
 
 abstract class ItemsRepository {
   final _controller = StreamController<List<Item>>.broadcast();

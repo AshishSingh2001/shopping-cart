@@ -5,7 +5,7 @@ import 'package:mockingjay/mockingjay.dart';
 
 import 'package:shopping_cart/feature/cart/view/cart_page.dart';
 import 'package:shopping_cart/feature/products/products.dart';
-import '../helper.dart';
+import 'helper/helper.dart';
 
 void main() {
   late MockItemsRepository mockItemsRepository;

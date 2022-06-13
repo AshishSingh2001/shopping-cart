@@ -3,33 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockingjay/mockingjay.dart';
 
-import 'package:shopping_cart/domain/items/item.dart';
 import 'package:shopping_cart/feature/cart/cart.dart';
 import 'package:shopping_cart/feature/products/products.dart';
 import 'package:shopping_cart/generated/l10n.dart';
-import '../../../helper.dart';
+import '../../../helper/helper.dart';
 
 void main() {
   late CartCubit cartCubit;
   late ProductsCubit productsCubit;
   late MockItemsRepository mockItemsRepository;
-
-  final items = <Item>[
-    const Item(
-      id: 1,
-      name: 'first',
-      description: 'first description',
-      price: 10,
-      isInCart: true,
-    ),
-    const Item(
-      id: 2,
-      name: 'second',
-      description: 'second description',
-      price: 20,
-      isInCart: false,
-    ),
-  ];
 
   group('Products Page', () {
     setUp(() {

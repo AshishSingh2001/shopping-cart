@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
 
-import 'package:shopping_cart/enum/env.dart';
 import 'package:shopping_cart/env/env.dart';
+import 'package:shopping_cart/utils/enum.dart';
 
 void main() {
   group('Test env', () {

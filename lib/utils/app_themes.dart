@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:shopping_cart/enum/app_theme.dart';
+import 'package:shopping_cart/utils/enum.dart';
 
 final Map<AppTheme, ThemeData> appThemes = {
   AppTheme.dark: ThemeData(

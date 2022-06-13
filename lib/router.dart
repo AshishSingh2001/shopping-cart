@@ -32,13 +32,11 @@ final GoRouter router = GoRouter(
         ),
       ],
     ),
-    // GoRoute(
-    //   path: '${RoutePath.itemDetails}/:id',
-    // ),
   ],
   debugLogDiagnostics: !prodEnv,
 );
 
+/// instantiates go router with a specific path
 GoRouter testRouter([String? initialLocation]) => GoRouter(
       initialLocation: initialLocation ?? '/',
       routes: [

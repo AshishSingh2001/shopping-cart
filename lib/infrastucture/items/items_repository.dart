@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:shopping_cart/domain/items/item.dart';
 import 'package:shopping_cart/domain/items/item_repository.dart';
+import 'package:shopping_cart/domain/items/model/item.dart';
 import 'package:shopping_cart/infrastucture/items/fake_items.dart';
 
 class FakeItemsRepository extends ItemsRepository {

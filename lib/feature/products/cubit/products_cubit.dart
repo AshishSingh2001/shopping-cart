@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'package:shopping_cart/domain/items/item.dart';
 import 'package:shopping_cart/domain/items/item_repository.dart';
+import 'package:shopping_cart/domain/items/model/item.dart';
 
 part 'products_state.dart';
 part 'products_cubit.freezed.dart';

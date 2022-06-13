@@ -1,6 +1,6 @@
 import 'package:logger/logger.dart';
 
-import 'package:shopping_cart/enum/env.dart';
+import 'package:shopping_cart/utils/enum.dart';
 
 const Env activeEnv = Env.dev;
 

@@ -10,7 +10,7 @@ import 'package:shopping_cart/feature/cart/cart.dart';
 import 'package:shopping_cart/feature/products/products.dart';
 import 'package:shopping_cart/generated/l10n.dart';
 import 'package:shopping_cart/infrastucture/items/items_repository.dart';
-import 'package:shopping_cart/router/router.dart';
+import 'package:shopping_cart/router.dart';
 
 class MockCartCubit extends MockCubit<CartState> implements CartCubit {}
 

@@ -27,7 +27,7 @@ class ProductsPageRobot {
     return int.parse(text.data!);
   }
 
-  /// Verify the cart value increases when 
+  /// Verify the cart value increases when
   /// a item is added to cart
   Future<void> verifyToggleAddToCart() async {
     final addToCart = find.byIcon(Icons.add);

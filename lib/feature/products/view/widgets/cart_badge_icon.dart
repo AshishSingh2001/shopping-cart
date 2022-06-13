@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:shopping_cart/feature/cart/cart.dart';
-import 'package:shopping_cart/router/router.dart';
+import 'package:shopping_cart/router.dart';
 
 class CartIcon extends StatelessWidget {
   const CartIcon({super.key});

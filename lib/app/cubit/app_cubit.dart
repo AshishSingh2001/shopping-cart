@@ -1,8 +1,7 @@
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 import 'package:shopping_cart/app/cubit/app_state.dart';
-import 'package:shopping_cart/enum/app_languages.dart';
-import 'package:shopping_cart/enum/app_theme.dart';
+import 'package:shopping_cart/utils/enum.dart';
 
 class AppCubit extends Cubit<AppState> {
   AppCubit()
@@ -13,7 +12,6 @@ class AppCubit extends Cubit<AppState> {
           ),
         );
 
-  @override
   AppState? fromJson(Map<String, dynamic> json) {
     final themeName = json['theme'] as String;
     final languageName = json['language'] as String;
@@ -30,7 +28,6 @@ class AppCubit extends Cubit<AppState> {
     return AppState(appTheme: theme, appLanguage: language);
   }
 
-  @override
   Map<String, dynamic>? toJson(AppState state) {
     final theme = <String, dynamic>{
       'theme': state.appTheme.toString(),

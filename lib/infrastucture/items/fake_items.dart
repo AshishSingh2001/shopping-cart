@@ -1,4 +1,4 @@
-import 'package:shopping_cart/domain/items/item.dart';
+import 'package:shopping_cart/domain/items/model/item.dart';
 
 // final fakeItems = List.generate(6, (_) => Item.fake());
 

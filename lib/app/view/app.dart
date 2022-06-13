@@ -5,12 +5,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:shopping_cart/app/cubit/app_cubit.dart';
 import 'package:shopping_cart/app/cubit/app_state.dart';
-import 'package:shopping_cart/enum/app_languages.dart';
 import 'package:shopping_cart/generated/l10n.dart';
 import 'package:shopping_cart/infrastucture/items/items_repository.dart';
-import 'package:shopping_cart/router/router.dart';
-import 'package:shopping_cart/theme/app_themes.dart';
-import 'package:shopping_cart/utils/locale_utitls.dart';
+import 'package:shopping_cart/router.dart';
+import 'package:shopping_cart/utils/app_themes.dart';
+import 'package:shopping_cart/utils/enum.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -36,8 +35,11 @@ class AppViewState extends State<App> {
           create: (context) => AppCubit(),
           child: BlocBuilder<AppCubit, AppState>(
             builder: (ctx, state) {
-              final locale = getAppLocale(
-                appLanguage: state.appLanguage ?? AppLanguage.en,
+              // final locale = getAppLocale(
+              //   appLanguage: state.appLanguage ?? AppLanguage.en,
+              // );
+              final locale = Locale(
+                state.appLanguage?.name ?? AppLanguage.en.name,
               );
               return MaterialApp.router(
                 // useInheritedMediaQuery: true,

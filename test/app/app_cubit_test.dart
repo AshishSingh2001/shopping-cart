@@ -2,9 +2,8 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:shopping_cart/app/cubit/app_cubit.dart';
 import 'package:shopping_cart/app/cubit/app_state.dart';
-import 'package:shopping_cart/enum/app_languages.dart';
-import 'package:shopping_cart/enum/app_theme.dart';
-import '../mock/mock_storage.dart';
+import 'package:shopping_cart/utils/enum.dart';
+import '../helper/mock_storage.dart';
 
 void main() {
   group('AppCubit - Test hydrated (fromJson/toJson)', () {

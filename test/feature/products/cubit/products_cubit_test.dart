@@ -2,9 +2,9 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:shopping_cart/domain/items/item.dart';
+import 'package:shopping_cart/domain/items/model/item.dart';
 import 'package:shopping_cart/feature/products/cubit/products_cubit.dart';
-import '../../../helper.dart';
+import '../../../helper/helper.dart';
 
 void main() {
   late MockItemsRepository mockItemsRepository;
