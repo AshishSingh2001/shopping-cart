@@ -35,6 +35,7 @@ jobs:
 
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
-        with: path: "./coverage/lcov.info"
-        min_coverage: 55
-        exclude: "**/*_observer.dart **/change.dart"
+        with: 
+          path: "./coverage/lcov.info"
+          min_coverage: 55
+          exclude: "**/*_observer.dart **/change.dart"
