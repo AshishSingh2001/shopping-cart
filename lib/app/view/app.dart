@@ -5,6 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:shopping_cart/app/cubit/app_cubit.dart';
 import 'package:shopping_cart/app/cubit/app_state.dart';
+import 'package:shopping_cart/domain/items/item_repository.dart';
 import 'package:shopping_cart/generated/l10n.dart';
 import 'package:shopping_cart/infrastucture/items/items_repository.dart';
 import 'package:shopping_cart/router.dart';
@@ -29,7 +30,7 @@ class AppViewState extends State<App> {
           FocusManager.instance.primaryFocus!.unfocus();
         }
       },
-      child: RepositoryProvider(
+      child: RepositoryProvider<ItemsRepository>(
         create: (context) => FakeItemsRepository(),
         child: BlocProvider<AppCubit>(
           create: (context) => AppCubit(),

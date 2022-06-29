@@ -55,7 +55,7 @@ void main() {
     }
 
     group(
-      'contructor',
+      'constructor',
       () {
         test('works properly', () {
           expect(buildCubit, returnsNormally);

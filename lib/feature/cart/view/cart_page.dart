@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'package:shopping_cart/domain/items/item_repository.dart';
 import 'package:shopping_cart/feature/cart/cart.dart';
 import 'package:shopping_cart/feature/cart/view/widgets/cart_list_tile.dart';
 import 'package:shopping_cart/generated/l10n.dart';
-import 'package:shopping_cart/infrastucture/items/items_repository.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -14,8 +14,7 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) =>
-          CartCubit(itemsRepository: context.read<FakeItemsRepository>())
-            ..load(),
+          CartCubit(itemsRepository: context.read<ItemsRepository>())..load(),
       child: const CartView(),
     );
   }
