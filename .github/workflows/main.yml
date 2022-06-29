@@ -1,4 +1,4 @@
-name: botspace_inbox
+name: shopping_cart
 
 on: [pull_request, push]
 jobs:
